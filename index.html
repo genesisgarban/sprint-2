@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main_container">
+    <section class="fondoatras">
+    <div class="tarjeta">
+    <img class="logo_tarjeta" src="./card-logo.svg" alt="logo-tarjeta">
+    <p class="numero_tarjeta">0000 0000 0000 0000</p>
+<div class="detalle_tarjeta">
+    <p class="detalle_tarjeta_nombre">Jane Appleseed</p>
+<p><span class="tarjeta_mes">00</span>/<span class="tarjeta_año">00</span></p>
+</div>
+</div>
+<div class="tarjeta_atras">
+    <p class="tarjeta_atras_cvc">000</p>
+</div>
+</section>
+    <section class="formulario_section">
+<form class="form" action="">
+    <label class="form_label" for="cardholder">Cardholder Name</label>
+    <input class="form_input" type="text" name="cardholder" id="cardholder" placeholder="e.g. Jane Appleseed">
+<div class="form_cardholder_error error"></div>
+
+    <label class="form_label" for="numerotarjeta">Card Number</label>
+    <input class="form_input" type="text" name="numerotarjeta" id="numerotarjeta" maxlength="19" placeholder="e.g 1234 5678 9123 0000">
+     <div class="form_number_error error"></div>
+
+    <div class="form_fecha-cvc">
+    <label class="form_label" for="tarjetames">Exp. Date (MM/YY)</label>
+    <label class="form_label" for="tarjetacvc">CVC</label>
+
+    <div class="form_fecha">
+    <input class="form_input" type="text" maxlength="2"  name="tarjetames" id="tarjetames" placeholder="MM">
+  <input class="form_input" type="text" maxlength="2" name="tarjetaaño" id="tarjetaaño" placeholder="YY">
+</div>
+<input class="form_input" type="text" maxlength="3" name="tarjetacvc" id="tarjetacvc" placeholder="e.g 123">
+<div class="form_error_container">
+<div class="form_input_mm_error error"></div>
+<div class="form_input_yy_error error"></div>
+</div>
+<div class="form_input_cvc_error error"></div>
+</div>
+<input class="form_submit" type="submit" value="Confirm">
+</form>
+<section class="thanks">
+    <img class="thanks_img" src="./icon-complete.svg" alt="complete icon">
+  <h1 class="thanks_titulo">THANK YOU!</h1>
+  <p class="thanks_texto">We've added your card details</p>
+  <button class="thanks_button">Continue</button>
+</section>
+    </section>
+</main>
+<script src="./main.js"></script>
+</body>
+</html>
